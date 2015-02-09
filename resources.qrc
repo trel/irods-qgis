@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>icon.png</file>
+    </qresource>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>file-icon.png</file>
+    </qresource>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>folder.png</file>
+    </qresource>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>layers.png</file>
+    </qresource>
+</RCC>
