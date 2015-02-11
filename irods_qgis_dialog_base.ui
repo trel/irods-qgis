@@ -120,7 +120,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75 24pt &quot;Baskerville&quot;;</string>
+    <string notr="true">font: 75 20pt &quot;Baskerville&quot;;</string>
    </property>
    <property name="text">
     <string>iRods</string>
