@@ -25,7 +25,7 @@ https://github.com/BioComputing/irods-qgis/issues
 
 # Credit
 
-The plugin is funded by DataNet Federation Consortium (http://datafed.org/)
+The plugin is funded by DataNet Federation Consortium (http://datafed.org/) supported by the National Science Foundation under Grant Number OCI 0940841 and developed by Amit Juneja at the University of Arizona
 
 A special thanks to Iplant Collaborative (http://www.iplantcollaborative.org/) and python-irodsclient (https://github.com/iPlantCollaborativeOpenSource/python-irodsclient) team
 
