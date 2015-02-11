@@ -21,17 +21,17 @@ Raster :
 
 # System Requirements
 
-# Windows (8 or older)
+##### Windows (8 or older)
 
 - Qgis 2.4 (Chugiak) or older
 	
 * The plugin is not compatible with Qgis 2.6.1 (Brighton) on Windows
 	
-# Mac OSX (10.10.2 or older)
+##### Mac OSX (10.10.2 or older)
 
 - Qgis 2.6.1 (Brighton) or older
 	
-# Linux (Ubuntu 14.04 or older)
+##### Linux (Ubuntu 14.04 or older)
 
 - Qgis 2.6.1 (Brigton) or older
 
