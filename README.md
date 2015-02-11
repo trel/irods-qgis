@@ -25,7 +25,7 @@ Raster :
 
 - Qgis 2.4 (Chugiak) or older
 	
-* The plugin is not compatible with Qgis 2.6.1 (Brighton) on Windows
+*The plugin is not compatible with Qgis 2.6.1 (Brighton) on Windows
 	
 ##### Mac OSX (10.10.2 or older)
 
@@ -36,10 +36,39 @@ Raster :
 - Qgis 2.6.1 (Brigton) or older
 
 # Installation
+#### Step 1
 
-	To install the plugin, clone the repository 
+To install the plugin, clone the repository 
 	
-	-- git clone https://github.com/BioComputing/irods-qgis.git --
+-- git clone https://github.com/BioComputing/irods-qgis.git --
+	
+#### Step 2
+
+##### Windows
+	
+	Place the folder in C://Users/<username>/.qgis2/python/plugins
+	
+##### Mac OSX
+	
+	Place the folder in /Users/<username>/.qgis2/python/plugins
+	
+##### Linux
+	
+	Place the folder in /<username>/.qgis2/python/plugins
+	
+	
+*Note : Replace .qgis2 with .qgis for qgis versions 1.8.0 or older
+	*If ######python folder does not exist, create the folder
+	
+#### Step 3
+
+Go to 'Manage Python Plugins' in Qgis
+
+#### Step 4
+
+Search for the plugin in 'All' plugins, and check the box next to #####Irods
+		
+	
 
 
 # Bug Tracker
