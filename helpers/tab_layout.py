@@ -720,6 +720,7 @@ class tab_dialog(object):
                 main_file_path = ''
                 for ext in shp_ext:
                     file_path = dirpath+'/'+base_name+'.'+ext
+                    print file_path
                     if ext == 'shp':
                         main_file_path = file_path
                     file = open(file_path,'w+')

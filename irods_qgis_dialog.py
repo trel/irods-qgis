@@ -73,11 +73,13 @@ class irods_qgisDialog(QtGui.QDialog, FORM_CLASS):
             host = str(sess_credentials[3])
             zone = str(sess_credentials[4])
             datastore = "/%s/home/%s"%(zone,username)
+            print username, password, port, host, zone, datastore
             try:
                 self.sess = iRODSSession(host=host, port=port, user=username, password=password, zone=zone)
                 coll = self.sess.collections.get(datastore)
 
             except Exception as e:
+                print e
                 self.sess = ''
                 if e == CAT_INVALID_AUTHENTICATION:
                     e = error("Log In Failed")

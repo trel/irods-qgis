@@ -2,6 +2,8 @@ import struct
 import logging
 import socket
 import xml.etree.ElementTree as ET
+from windows_socket_patch import read_exactly
+import os
 
 from irods.message.message import Message
 from irods.message.property import (BinaryProperty, StringProperty, 
@@ -20,9 +22,18 @@ class iRODSMessage(object):
 
     @staticmethod
     def recv(sock):
-        rsp_header_size = sock.recv(4, socket.MSG_WAITALL)
+        if os.name=='nt':
+            rsp_header_size = read_exactly(sock,4)
+        else:
+            print "here"
+            rsp_header_size = sock.recv(4, socket.MSG_WAITALL)
+
         rsp_header_size = struct.unpack(">i", rsp_header_size)[0]
-        rsp_header = sock.recv(rsp_header_size, socket.MSG_WAITALL)
+
+        if os.name=='nt':
+            rsp_header = read_exactly(sock,rsp_header_size)
+        else:
+            rsp_header = sock.recv(rsp_header_size, socket.MSG_WAITALL)
             
         xml_root = ET.fromstring(rsp_header)
         type = xml_root.find('type').text
@@ -31,9 +42,14 @@ class iRODSMessage(object):
         bs_len = int(xml_root.find('bsLen').text)
         int_info = int(xml_root.find('intInfo').text)
 
-        message = sock.recv(msg_len, socket.MSG_WAITALL) if msg_len != 0 else None
-        error = sock.recv(err_len, socket.MSG_WAITALL) if err_len != 0 else None
-        bs = sock.recv(bs_len, socket.MSG_WAITALL) if bs_len != 0 else None
+        if os.name=='nt':
+            message = read_exactly(sock,msg_len) if msg_len != 0 else None
+            error = read_exactly(sock,err_len) if err_len != 0 else None
+            bs = read_exactly(sock,bs_len) if bs_len != 0 else None
+        else:
+            message = sock.recv(msg_len, socket.MSG_WAITALL) if msg_len != 0 else None
+            error = sock.recv(err_len, socket.MSG_WAITALL) if err_len != 0 else None
+            bs = sock.recv(bs_len, socket.MSG_WAITALL) if bs_len != 0 else None
     
         #if message:
             #logger.debug(message)
