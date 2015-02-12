@@ -9,7 +9,7 @@
 [general]
 name=iRods
 qgisMinimumVersion=2.0
-description=Connect to irods via qgis
+description= Qgis plugin to connect to any iRods (open source http://irods.org) datastore
 version=0.1
 author=Amit Juneja
 email=amitj@email.arizona.edu
@@ -24,9 +24,9 @@ email=amitj@email.arizona.edu
 # Tags are comma separated with spaces allowed
 tags=
 
-homepage=
-tracker=
-repository=
+homepage= https://github.com/BioComputing/irods-qgis
+tracker= https://github.com/BioComputing/irods-qgis/issues
+repository= https://github.com/BioComputing/irods-qgis
 icon=icon.png
 # experimental flag
 experimental=False
