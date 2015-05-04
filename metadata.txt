@@ -10,7 +10,7 @@
 name=iRods
 qgisMinimumVersion=2.0
 description= Qgis plugin to connect to any iRods (open source http://irods.org) datastore
-version=0.1
+version=2.0
 author=Amit Juneja
 email=amitj@email.arizona.edu
 

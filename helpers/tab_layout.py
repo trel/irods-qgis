@@ -652,14 +652,13 @@ class tab_dialog(object):
         icon_path_file = ':/plugins/irods_qgis/file-icon.png'
         try:
             coll = self.auth_object['sess'].collections.get(datastore)
-        except:
+        except Exception as e:
             if internet_on():
                 parent.appendRow(dummy_child)
                 return False
             else:
                 e = error("Network Error.Check your Connection")
                 self.dialog.reject()
-               
 
         for col in coll.subcollections:
             folders.append("%s"%(col.name))

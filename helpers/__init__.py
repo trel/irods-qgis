@@ -1,1 +1,1 @@
-__all__ = ['tab_layout.py', 'error', 'set_root_datastore', 'new_file_name', 'check_network']
+__all__ = ['tab_layout.py', 'extra', 'table_dialog' 'error', 'set_root_datastore', 'new_file_name', 'check_network']

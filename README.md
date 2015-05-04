@@ -88,4 +88,13 @@ A special thanks to Iplant Collaborative (http://www.iplantcollaborative.org/) a
 GNU GPL. Read more on https://github.com/BioComputing/irods-qgis/blob/master/LICENSE.md
 
 
+function mvn = q(y)
+	mu = [0,0]
+	sigma = [0.5,0.3;0.4,2.0]
+	X = linspace(-10,10)
+	y = zeros(1,100)
+	Xy = [X(:),y(:)]
+	mvn = mvnpdf(Xy,mu,sigma);
+endfunction
+
 
