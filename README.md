@@ -17,7 +17,7 @@ Raster :
  - GeoTiff (.tif)
  - bmp
 
-*Note : At the moment only basic vector and raster data are supported. More support for other formats will be added soon
+*Note : At the moment only basic vector and raster data are supported. More support for other formats will be added soon*
 
 # System Requirements
 
@@ -57,7 +57,7 @@ To install the plugin, clone the repository
 	Place the folder in /<username>/.qgis2/python/plugins
 	
 	
-* Note : If ######python folder does not exist, create the folder
+*Note : If __python__ folder does not exist, create the folder*
 	
 #### Step 3
 
@@ -67,11 +67,11 @@ Select 'Manage Python Plugins' option under Plugins menu in Qgis
 
 #### Step 4
 
-Search for the plugin in 'All' plugins, and check the box next to #####iRods to enable the plugin
+Search for the plugin in 'All' plugins, and check the box next to **iRods** to enable the plugin
 		
 !["Image N/A"] (img/img2.png)
 
-* Note: Plugin will be available on the plugin toolbar and under plugins menu after it is enabled
+*Note: Plugin will be available on the plugin toolbar and under plugins menu after it is enabled*
 
 # Bug Tracker
 
