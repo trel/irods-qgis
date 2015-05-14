@@ -65,7 +65,7 @@ Select 'Manage Python Plugins' option under Plugins menu in Qgis
 
 #### Step 4
 
-Search for the plugin in 'All' plugins, and check the box next to **iRods** to enable the plugin
+Search for the plugin in 'All' plugins, and check the box next to **iRODS** to enable the plugin
 		
 !["Image N/A"] (img/img2.png)
 

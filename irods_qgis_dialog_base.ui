@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>iRods : v3.1</string>
+   <string>iRODS : v3.1</string>
   </property>
   <widget class="QDialogButtonBox" name="button_box">
    <property name="geometry">

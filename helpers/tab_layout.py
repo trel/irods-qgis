@@ -182,7 +182,7 @@ class tab_dialog(object):
 
         self.create_export_tree()
         self.pushButton_2.clicked.disconnect()
-        self.pushButton_2.setText(_translate("Dialog", "Save to iRods", None))
+        self.pushButton_2.setText(_translate("Dialog", "Save to iRODS", None))
         self.pushButton_2.setEnabled(False)
         self.pushButton_2.clicked.connect(self.save_to_irods)
         self.pushButton_6.clicked.disconnect()
@@ -244,7 +244,7 @@ class tab_dialog(object):
         self.pushButton_5.setText(_translate("Dialog", "Set Datastore", None))
         self.pushButton_3.setText(_translate("Dialog", "Log Out", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Dialog", "Import", None))
-        self.pushButton_2.setText(_translate("Dialog", "Save to iRods", None))
+        self.pushButton_2.setText(_translate("Dialog", "Save to iRODS", None))
         self.pushButton_4.setText(_translate("Dialog", "Set Datastore", None))
         self.pushButton_6.setText(_translate("Dialog", "Log Out", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Dialog", "Export", None))
@@ -325,7 +325,7 @@ class tab_dialog(object):
 
 
         self.pushButton_2.clicked.disconnect()
-        self.pushButton_2.setText(_translate("Dialog", "Save to iRods", None))
+        self.pushButton_2.setText(_translate("Dialog", "Save to iRODS", None))
         self.pushButton_2.setEnabled(False)
         self.pushButton_2.clicked.connect(self.save_to_irods)
         self.pushButton_6.clicked.disconnect()

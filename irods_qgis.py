@@ -74,7 +74,7 @@ class irods_qgis:
 
         # Declare instance attributes
         self.actions = []
-        self.menu = self.tr(u'&iRods')
+        self.menu = self.tr(u'&iRODS')
         # TODO: We are going to let the user set this up in a future iteration
         self.toolbar = self.iface.addToolBar(u'irods_qgis')
         self.toolbar.setObjectName(u'irods_qgis')
@@ -174,7 +174,7 @@ class irods_qgis:
         icon_path = ':/plugins/irods_qgis/icon.png'
         self.add_action(
             icon_path,
-            text=self.tr(u'iRods'),
+            text=self.tr(u'iRODS'),
             callback=self.run,
             parent=self.iface.mainWindow())
 
@@ -183,7 +183,7 @@ class irods_qgis:
         """Removes the plugin menu item and icon from QGIS GUI."""
         for action in self.actions:
             self.iface.removePluginMenu(
-                self.tr(u'&iRods'),
+                self.tr(u'&iRODS'),
                 action)
             self.iface.removeToolBarIcon(action)
 
