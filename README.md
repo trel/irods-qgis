@@ -23,17 +23,15 @@ Raster :
 
 ##### Windows (8 or older)
 
-- Qgis 2.4 (Chugiak) or older
-	
-* The plugin is not compatible with Qgis 2.6.1 (Brighton) on Windows
+- Qgis 2.8.2 (Wien) or older
 	
 ##### Mac OSX (10.10.2 or older)
 
-- Qgis 2.6.1 (Brighton) or older
+- Qgis 2.8.2 (Wien) or older
 	
 ##### Linux (Ubuntu 14.04 or older)
 
-- Qgis 2.6.1 (Brigton) or older
+- Qgis 2.8.2 (Wien) or older
 
 # Installation
 #### Step 1
@@ -86,6 +84,7 @@ A special thanks to Iplant Collaborative (http://www.iplantcollaborative.org/) a
 # License
 
 GNU GPL. Read more on https://github.com/BioComputing/irods-qgis/blob/master/LICENSE.md
+
 
 
 

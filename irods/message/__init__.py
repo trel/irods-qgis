@@ -25,7 +25,6 @@ class iRODSMessage(object):
         if os.name=='nt':
             rsp_header_size = read_exactly(sock,4)
         else:
-            print "here"
             rsp_header_size = sock.recv(4, socket.MSG_WAITALL)
 
         rsp_header_size = struct.unpack(">i", rsp_header_size)[0]

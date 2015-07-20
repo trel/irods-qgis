@@ -1,14 +1,26 @@
 <RCC>
-    <qresource prefix="/plugins/irods-qgis" >
+    <qresource prefix="/plugins/irods_qgis" >
         <file>icon.png</file>
     </qresource>
-    <qresource prefix="/plugins/irods-qgis" >
+    <qresource prefix="/plugins/irods_qgis" >
         <file>file-icon.png</file>
     </qresource>
-    <qresource prefix="/plugins/irods-qgis" >
+    <qresource prefix="/plugins/irods_qgis" >
         <file>folder.png</file>
     </qresource>
-    <qresource prefix="/plugins/irods-qgis" >
+    <qresource prefix="/plugins/irods_qgis" >
         <file>layers.png</file>
+    </qresource>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>home.png</file>
+    </qresource>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>delete.png</file>
+    </qresource>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>add-folder.png</file>
+    </qresource>
+    <qresource prefix="/plugins/irods_qgis" >
+        <file>globe_disconnected.png</file>
     </qresource>
 </RCC>
