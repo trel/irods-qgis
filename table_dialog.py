@@ -35,10 +35,12 @@ import time
 #from irods_qgis import irods_qgis
 from irods.session import iRODSSession
 from irods.exception import CAT_INVALID_AUTHENTICATION , OVERWITE_WITHOUT_FORCE_FLAG, CATALOG_ALREADY_HAS_ITEM_BY_THAT_NAME
+
 #from helpers.tab_layout import tab_dialog
 from helpers.error import error
 from helpers.replace import replace
 from helpers.new_file_name import new_file_name
+
 from helpers.new_folder_name import new_folder_name
 from helpers.check_network import internet_on
 from helpers.content_type import content_types
@@ -49,6 +51,7 @@ import webbrowser
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
     os.path.dirname(__file__), 'table_dialog copy.ui'))
+
 
 
 class table_dialog(QtGui.QDialog, FORM_CLASS):
@@ -165,6 +168,7 @@ class table_dialog(QtGui.QDialog, FORM_CLASS):
             self.delete_2.setEnabled(False)
 
 
+
     ## INITIALIZE IMPORT TAB FUNCTIONS
 
 
@@ -191,6 +195,7 @@ class table_dialog(QtGui.QDialog, FORM_CLASS):
         self.datastore_i.returnPressed.connect(self.pre_change_datastore )
         self.view_i.clicked.connect(self.pre_change_datastore )
         self.view_e.clicked.connect(self.pre_change_datastore_export_tree)
+
         self.upload_i.clicked.connect(self.load_layers)
         self.upload_e.clicked.connect(self.init_export_tree)
         self.search_button_i.clicked.connect(self.search_import)
@@ -282,6 +287,7 @@ class table_dialog(QtGui.QDialog, FORM_CLASS):
         else:
             item = QTreeWidgetItem(parent,[''])
             tab.insertTopLevelItem(item_count,item)
+
         QApplication.restoreOverrideCursor() 
         return True
 
@@ -627,6 +633,7 @@ class table_dialog(QtGui.QDialog, FORM_CLASS):
             self.datastore_i.setText(item.text(3))
 
     def change_datastore(self, url=None):
+
         """
         Changes datastore after it is typed and return is pressed (for import tab)
 
@@ -728,6 +735,7 @@ class table_dialog(QtGui.QDialog, FORM_CLASS):
 
     def search_import(self):
         """ Search for query in the current import tree items """
+
         paths = []
         query = str(self.search_i.text())
         if query:
@@ -835,6 +843,7 @@ class table_dialog(QtGui.QDialog, FORM_CLASS):
         self.change_datastore_export_tree(text)
 
     def change_datastore_export_tree(self, url=None):
+
         """
         Changes datastore after it is typed and return is pressed (for export tab)
 
