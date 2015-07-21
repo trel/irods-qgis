@@ -476,7 +476,7 @@ class table_dialog(QtGui.QDialog, FORM_CLASS):
             else:
                 return 'Raster Image Layer'
 
-        return 'No Spatial File Selected'
+        return 'No Spatial File'
 
     def set_prog_bar_text(self,text=None,spatial=None,export=False):
          """ Set progress bar label text for import and export tabs """

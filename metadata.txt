@@ -8,9 +8,10 @@
 
 [general]
 name=iRods
-qgisMinimumVersion=2.0
+qgisMinimumVersion=2.3
 description= Qgis plugin to connect to any iRods (open source http://irods.org) datastore
-version=3.1
+version=3.2
+about=Plugin for a popular open source GIS platform called QGIS (http://www.qgis.org/). The plugin allows one to | Connect to any iRODS (open source http://www.irods.org) datastore directly from QGIS | Import a spatial file from irods datastore to open map canvas on QGIS | Save a layer from the map canvas on QGIS to your iRODS datastore as a spatial files
 author=Amit Juneja
 email=amitj@email.arizona.edu
 
